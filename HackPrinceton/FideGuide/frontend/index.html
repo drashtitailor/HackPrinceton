@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidely</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="background-animation">
+        <!-- Left-to-right beams -->
+        <div class="light-beam-left"></div>
+        <div class="light-beam-left"></div>
+        <div class="light-beam-left"></div>
+    
+        <!-- Right-to-left beams -->
+        <div class="light-beam-right"></div>
+        <div class="light-beam-right"></div>
+        <div class="light-beam-right"></div>
+    </div>
+    
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="chat-header">
+                <h2>Fidely: Investing Assistant</h2>
+            </div>
+            <div class="chat-messages" id="chat-box">
+                <div class="message bot-message">Hello! I'm your financial investing coach Fidely. What question do you have to start investing?</div>
+            </div>
+            <div class="chat-input">
+                <textarea id="user-input" placeholder="Ask about stocks or type a message..." rows="3"></textarea>
+                <button class="send-button" onclick="sendMessage()">
+                    <span class="button-content">Send</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <div class="info-box" id="info-box">
+                <p id="info-text">Welcome! Here you can access various market analysis tools and resources.</p>
+            </div>
+
+            <div class="logo-container">
+                <img src="images/fidelitylogo.png" alt="Fidelity Logo" class="logo">
+            </div>
+          
+            <button class="action-button" data-category="investment">
+                <div class="button-glow"></div>
+                <i class="icon investment-icon"></i>
+                <span>Account Creation</span>
+            </button>
+            <button class="action-button" data-category="market">
+                <div class="button-glow"></div>
+                <i class="icon market-icon"></i>
+                <span>Market Trends</span>
+            </button>
+            <button class="action-button" data-category="marketPositioning">
+                <div class="button-glow"></div>
+                <i class="icon portfolio-icon"></i>
+                <span>Market Positioning</span>
+            </button>
+            <button class="action-button" data-category="technical">
+                <div class="button-glow"></div>
+                <i class="icon trading-icon"></i>
+                <span>Technical Indicators</span>
+            </button>
+            <button class="action-button" data-category="financialAnalysisGuide">
+                <div class="button-glow"></div>
+                <i class="icon news-icon"></i>
+                <span>Financial Analysis Guide</span>
+            </button>
+            <button class="action-button" data-category="tradingGuide">
+                <div class="button-glow"></div>
+                <i class="icon education-icon"></i>
+                <span>Trading Guide</span>
+            </button>
+            <button class="action-button" data-category="portfolioManagementGuide">
+                <div class="button-glow"></div>
+                <i class="icon crypto-icon"></i>
+                <span>Portfolio Management Guide</span>
+            </button>
+            <button class="action-button" data-category="marketEconomicIndicators">
+                <div class="button-glow"></div>
+                <i class="icon forex-icon"></i>
+                <span>Market Economic Indicators</span>
+
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+    <div class="modal">
+        <button class="close-modal">×</button>
+        <div class="modal-content">
+            <h2></h2>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
